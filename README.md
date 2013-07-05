@@ -15,7 +15,7 @@ Run
 ---
 
 ```
-git clone git@github.com:synthmedia/
+git clone git@github.com:synthmedia/genesis
 npm install
 grunt
 ```
