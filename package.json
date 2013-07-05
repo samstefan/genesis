@@ -1,0 +1,11 @@
+{
+  "name": "Static-Grunt-Website-Template",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "grunt": "~0.3",
+    "grunt-reload": "~0.2",
+    "grunt-contrib-stylus": "~0.3",
+    "grunt-contrib-jade": "~0.3"
+  }
+}
