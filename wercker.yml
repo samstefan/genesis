@@ -19,4 +19,4 @@ deploy:
         key_id: $KEY
         key_secret: $SECRET
         bucket_url: $URL
-        source_dir: html/
+        source_dir: build/

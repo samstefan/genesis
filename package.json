@@ -4,6 +4,7 @@
   "private": "true",
   "dependencies": {
     "grunt": "~0.3",
+    "grunt-cli": "~0.1",
     "grunt-reload": "~0.2",
     "grunt-contrib-stylus": "~0.3",
     "grunt-contrib-jade": "~0.3"

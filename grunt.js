@@ -45,4 +45,5 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['stylus', 'jade', 'watch'])
+  grunt.registerTask('build', ['stylus', 'jade'])
 }
