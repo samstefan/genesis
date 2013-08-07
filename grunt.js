@@ -26,12 +26,18 @@ module.exports = function(grunt) {
         }
       , watch:
         { stylus:
-          { files: 'app/stylus/*.styl'
+          { files: ['app/stylus/*.styl', 'app/stylus/*/*.styl']
           , tasks: 'stylus reload'
           }
         , jade:
           { files: ['app/templates/*.jade', 'app/templates/*/*.jade']
           , tasks: 'jade reload'
+          }
+        }
+      , connect:
+        { site:
+          { port: 1337
+          , base: 'build'
           }
         }
       }
@@ -42,8 +48,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus')
   grunt.loadNpmTasks('grunt-contrib-jade')
   grunt.loadNpmTasks('grunt-reload')
+  grunt.loadNpmTasks('grunt-connect')
 
   // Default task.
   grunt.registerTask('default', ['stylus', 'jade', 'watch'])
-  grunt.registerTask('build', ['stylus', 'jade'])
+  grunt.registerTask('server', ['connect'])
+  grunt.registerTask('build', ['stylus', 'jade', 'connect'])
 }
