@@ -20,3 +20,9 @@ cd genesis
 npm install
 grunt
 ```
+
+Genesis also comes with a http server built in for local development. You can run it by doing the following:
+
+```
+grunt server
+```
