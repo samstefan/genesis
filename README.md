@@ -3,7 +3,7 @@
 
 Genesis is a grunt tool for easing the build of static websites; by allowing you to code with Jade templates and Stylus.
 
-If you haven't used Grunt before you should checkout the [getting started guide]http://gruntjs.com/getting-started.
+If you haven't used Grunt before you should checkout the [getting started guide](http://gruntjs.com/getting-started).
 
 Genesis also comes with a few extras, such as a local web server and Javascript minifying.
 
@@ -35,5 +35,5 @@ The default Grunt task will compile the Jade, Stylus and Javascript in pretty mo
 ## Release History
 ---
 
-* v0.1.1 Updated to Grunt 0.4.0, added javascript minifying with debugging and deployment settings.
+* v0.1.1 Updated to Grunt 0.4.0, added Javascript minifying with debugging and deployment settings.
 * v0.1.0 Work in progress, not yet officially released.
