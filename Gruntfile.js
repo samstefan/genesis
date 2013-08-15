@@ -96,7 +96,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify')
 
   // Default task.
-  grunt.registerTask('default', ['stylus:compile', 'jade:compile', 'uglify:compile', 'connect', 'watch'])
+  grunt.registerTask('default', ['stylus:compile', 'jade:compile', 'uglify:compile', 'connect:server', 'watch'])
   grunt.registerTask('build', ['stylus:compile', 'jade:compile', 'uglify:compile'])
   grunt.registerTask('server', 'connect:keepalive')
   grunt.registerTask('deploy', ['stylus:deploy', 'jade:deploy', 'uglify:deploy'])
