@@ -42,12 +42,12 @@ module.exports = function(grunt) {
     , watch:
       { stylus:
         { files: ['app/stylus/*.styl', 'app/stylus/*/*.styl']
-        , tasks: 'stylus reload'
+        , tasks: 'stylus'
         , options: { livereload: true }
         }
       , jade:
         { files: ['app/templates/*.jade', 'app/templates/*/*.jade']
-        , tasks: 'jade reload'
+        , tasks: 'jade'
         , options: { livereload: true }
         }
       }
