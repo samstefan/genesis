@@ -27,6 +27,32 @@ img.alignright {
   float: right;
   margin-left: 15px;
 }
+body {
+  font-size: 1em;
+}
+h1,
+h2 {
+  font-family: 'brandon-grotesque';
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+h2 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+summary {
+  font-family: 'ff-tisa-sans-web-pro';
+  font-size: 1.4em;
+  letter-spacing: 0.08em;
+  line-height: 1.4em;
+}
+p {
+  font-family: 'ff-tisa-web-pro';
+  font-size: 1.2em;
+}
 .input-clear {
   outline: 0;
   border: 0px;
