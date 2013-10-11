@@ -1,0 +1,48 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: #383838;
+  background-color: #fbfbfb;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  vertical-align: top;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.no-margin-right {
+  margin-right: 0px !important;
+}
+img.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+img.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.bg-dark {
+  background-color: #2d2d2d;
+  color: #c0bebe;
+}
+.bg-dark summary {
+  color: #f7f4f4;
+}
+@media screen and (min-width:771px) {
+  .page_section {
+    min-height: 100%;
+  }
+}

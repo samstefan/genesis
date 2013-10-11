@@ -1,0 +1,60 @@
+// Page Sections
+.page_section
+  display block
+  position relative
+  overflow hidden
+  padding 1em 1.4em
+  position relative
+  display block
+
+.bg-dark
+  background-color $brandBlack
+  color #c0bebe
+  h1
+  h2
+    color $brandWhite
+  summary
+    color #f7f4f4
+
+.bg-grey
+  background-color $brandGrey
+
+.section-border
+  border-top 15px solid
+
+.color-blue
+  border-color $brandBlue
+  h2
+    color $brandBlue
+
+.color-green
+  border-color $brandGreen
+  h2
+    color $brandGreen
+
+.color-red
+  border-color $brandRed
+  h2
+    color $brandRed
+
+
+// Desktop
+@media $mediaDesktop
+  .page_section
+    min-height 100%
+
+  .content_wrapper
+    width 50%
+    overflow hidden
+
+  .centred_content_wrapper
+    width 60%
+    margin auto
+    overflow hidden
+    text-align center
+
+  .page_wrap
+    max-width 1280px
+    margin auto
+    &.home
+      max-width 1100px

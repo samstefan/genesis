@@ -1,24 +1,55 @@
+html
 body
-  font-size 1em
+  color #6f6e6e
+  -webkit-text-size-adjust none
+
+@media $mediaDesktop
+  body
+    font-size 1em
+  h1
+    font-size 4.3em
+  h2
+    font-size 3em
+
+  summary
+    font-size 1.4em
+    line-height 1.5em
+    letter-spacing 0.07em
+
+
+@media $mediaMobile
+  body
+    font-size 0.8em
+
+  h1
+    font-size 2em
+
+  h2
+    font-size 1.8em
+    text-align center
+
+  summary
+    font-size 1.2em
+    line-height 1.6em
+    letter-spacing 0.05em
+
 
 h1
 h2
   font-family 'brandon-grotesque'
   text-transform uppercase
+  color $brandBlack
 
 h1
-  font-size 4em
   letter-spacing 0.1em
 
 h2
-  font-size 3em
   letter-spacing 0.1em
 
 summary
   font-family 'ff-tisa-sans-web-pro'
-  font-size 1.4em
-  letter-spacing 0.08em
-  line-height 1.4em
+  color $brandBlack
 p
   font-family 'ff-tisa-web-pro'
   font-size 1.2em
+  font-weight 200

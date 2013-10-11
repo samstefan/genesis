@@ -111,6 +111,7 @@ module.exports = function(grunt) {
         { options:
           { port: 1337
           , base: 'build'
+          , hostname: '*'
           }
         }
       , keepalive:

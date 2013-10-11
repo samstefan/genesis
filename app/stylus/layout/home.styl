@@ -1,0 +1,21 @@
+h1
+  text-align center
+
+@media $mediaDesktop
+  h1
+    margin-top 25%
+
+  .email_link
+    font-size 3em
+    display block
+    text-align center
+    color $brandBlue
+    text-decoration none
+    width 100%
+    box-sizing border-box
+    padding 20px
+    margin-top 40px
+    transition all 0.2s
+    &:hover
+      background-color lighten($brandBlack, 5%)
+      color lighten($brandBlue, 20%)
