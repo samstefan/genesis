@@ -35,6 +35,6 @@ grunt
 ## Release History
 ---
 
-* v0.1.2 Added rsync to images, image compression and full Javascript file concatenations.
-* v0.1.1 Updated to Grunt 0.4.0, added Javascript minifying with debugging and deployment settings.
-* v0.1.0 Work in progress, not yet officially released.
+* v0.1.2 - Added rsync to images, image compression and full Javascript file concatenations.
+* v0.1.1 - Updated to Grunt 0.4.0, added Javascript minifying with debugging and deployment settings.
+* v0.1.0 - Work in progress, not yet officially released.
