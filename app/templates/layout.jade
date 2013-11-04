@@ -2,7 +2,7 @@ doctype 5
 html
   head
     block title
-      title Genesis Template
+      title Static Template Site
 
     // Twitter Meta
     meta(name='twitter:card', value='summary')
@@ -30,6 +30,10 @@ html
   body
     block content
 
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')
+    script(src='/assets/js/vendor/respond.min.js')
     script(src='/assets/js/app.min.js')
 
     // Google Analytics
