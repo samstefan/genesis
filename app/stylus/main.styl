@@ -1,17 +1,57 @@
+//==============================================================================
+
+// Title:
+// Main Stylus Files
+
+// Description:
+// All imports should be done here.
+// Keep your CSS out of this file.
+
+// Content Index:
+// 01 - Theme name
+// 02 - Resets and mixins
+// 03 - Theme foundations
+// 04 - Theme components
+// 05 - Page layouts
+// 06 - Page helpers
+
+//==============================================================================
+
+//------------------------------------------------------------------------------
+// 01 - Resets and mixins
+//------------------------------------------------------------------------------
+
 @import 'nib'
+@import 'mixins.styl'
 
-@import './mixins.styl'
+//------------------------------------------------------------------------------
+// 02 - Theme foundations
+//------------------------------------------------------------------------------
 
-@import './foundation/variables.styl'
-@import './foundation/base.styl'
-@import './foundation/typography.styl'
-@import './foundation/structure.styl'
-@import './foundation/btns.styl'
-@import './foundation/forms.styl'
+@import 'foundation/variables.styl'
+@import 'foundation/base.styl'
+@import 'foundation/typography.styl'
+@import 'foundation/structure.styl'
+@import 'foundation/btns.styl'
+@import 'foundation/forms.styl'
+@import 'foundation/grids.styl'
 
-@import './components/header.styl'
-@import './components/footer.styl'
+//------------------------------------------------------------------------------
+// 03 - Theme components
+//------------------------------------------------------------------------------
 
-@import './layout/home.styl'
+@import 'components/header.styl'
+@import 'components/footer.styl'
 
-@import './foundation/helpers.styl'
+//------------------------------------------------------------------------------
+// 04 - Page layouts
+//------------------------------------------------------------------------------
+
+@import 'layout/home.styl'
+
+//------------------------------------------------------------------------------
+// 05 - Page helpers
+//------------------------------------------------------------------------------
+
+// This must be kept at the bottom encase helpers require overrides.
+@import 'foundation/helpers.styl'
