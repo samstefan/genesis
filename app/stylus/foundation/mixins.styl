@@ -1,0 +1,17 @@
+//==============================================================================
+
+// Title:
+// Stylus Mixins
+
+// Description:
+// Stylus mixins that make life a bit easier go in here.
+
+//==============================================================================
+
+box-sizing(args)
+  -webkit-box-sizing args
+  -moz-box-sizing args
+  box-sizing args
+
+responsive(target, context)
+  ((target / context) * 100) %
