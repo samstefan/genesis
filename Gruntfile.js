@@ -136,7 +136,7 @@ module.exports = function(grunt) {
           // Add in your Javascript files here.
           // Made sure you added the Javascript files in order of the dependency tree.
           { 'build/assets/js/app.min.js': ['app/javascript/vendor/jquery-1.9.1.min.js', 'app/javascript/vendor/respond.min.js', 'app/javascript/app.js']
-          , 'build/assets/js/vendor/modernizr.custom.38277.js': ['app/javascript/vendor/modernizr.custom.38277.js']
+          , 'build/assets/js/vendor/modernizr.js': ['app/javascript/vendor/modernizr.js']
           }
         }
       }
