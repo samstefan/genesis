@@ -101,10 +101,6 @@ module.exports = function(grunt) {
         { files: ['app/javascript/*', 'app/javascript/vendor/*']
         , tasks: 'uglify:compile'
         }
-      , images:
-        { files: ['build/assets/img/*', 'build/assets/img/**/*']
-        , tasks: 'imagemin'
-        }
       }
     , connect:
       { server:
@@ -144,6 +140,21 @@ module.exports = function(grunt) {
           }
         }
       }
+    , cacheBust:
+      { options:
+        { encoding: 'utf8'
+        , algorithm: 'md5'
+        , length: 16
+        }
+      , assets:
+        { files:
+          [ { src:
+              [ 'build/index.html'
+              ]
+            }
+          ]
+        }
+      }
     }
 
   grunt.initConfig(config)
@@ -155,11 +166,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-rsync')
   grunt.loadNpmTasks('grunt-contrib-imagemin')
+  grunt.loadNpmTasks('grunt-cache-bust')
 
   // Tasks.
-  grunt.registerTask('default', ['stylus:compile', 'jade:compile', 'uglify:compile', 'rsync', 'imagemin', 'connect:server', 'watch'])
+  grunt.registerTask('default', ['stylus:compile', 'jade:compile', 'uglify:compile', 'rsync', 'connect:server', 'watch'])
   grunt.registerTask('build', ['stylus:compile', 'jade:compile', 'uglify:compile', 'rsync'])
   grunt.registerTask('server', 'connect:keepalive')
-  grunt.registerTask('deploy', ['stylus:deploy', 'jade:deploy', 'uglify:deploy', 'rsync', 'imagemin'])
+  grunt.registerTask('deploy', ['stylus:deploy', 'jade:deploy', 'uglify:deploy', 'rsync', 'imagemin', 'cacheBust'])
 
 }

@@ -35,6 +35,7 @@ The default Grunt task will compile the Jade, Stylus and Javascript in pretty mo
 ## Release History
 ---
 
+* v0.1.3 - Added cache busting to the deploy process, removed image compression form watch and added the build folder to the gitignore file.
 * v0.1.2 - Added rsync to images, image compression and full Javascript file concatenations.
 * v0.1.1 - Updated to Grunt 0.4.0, added Javascript minifying with debugging and deployment settings.
 * v0.1.0 - Work in progress, not yet officially released.
