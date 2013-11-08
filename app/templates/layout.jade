@@ -4,11 +4,11 @@ html
     block title
       title Static Template Site
 
-    // Twitter Meta
+    //- Twitter Meta
     meta(name='twitter:card', value='summary')
     meta(name='twitter:site', value='')
 
-    // Google Meta
+    //- Google Meta
     meta(name="author",content="")
     meta(name="description", content="")
 
@@ -26,12 +26,12 @@ html
     block content
 
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
-    script
+    script.
       window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')
     script(src='/assets/js/app.min.js')
 
-    // Google Analytics
-    script
+    //- Google Analytics
+    script.
       var _gaq=[['_setAccount','UA-NUMBER-HERE-REPLACE-THIS!'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
